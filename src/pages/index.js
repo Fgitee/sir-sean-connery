@@ -9,13 +9,13 @@ const IndexPage = () => (
  <Layout>
     <SEO title="Home" />
    <h1>Sir Thomas Sean Connery</h1>
-    <h2>Scotland's Greatest Living National Treasure</h2>
+    <h5>Scotland's Greatest National Treasure</h5>
     <StaticImage
       src="https://www.commeuncamion.com/wp-content/uploads/2014/09/sean-connery-kilt-.jpg"
       alt="Sean Connery"
-      width={300}
-      height={100}
-      //quality={95}
+      width={600}
+      height={800}
+      quality={100}
       formats={["AUTO", "WEBP", "AVIF"]}
       style={{ marginBottom: `1.45rem` }}
     />
