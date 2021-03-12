@@ -56,30 +56,22 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
 
 Front-End
 
-React
-HTML
-CSS
+React, 
+HTML, 
+CSS, 
 JavaScript/JSX
 
 Back-end
 
-Node.js
+Node.js, 
 Express.js
-Mongoose
-MongoDB
-
-Testing
-
-Mocha
-Chai
-Enzyme
 
 Other
 
-Git and Github
-Netlify
-JSON Web Token
-CORS
+Git and Github, 
+Netlify, 
+JSON Web Token, 
+CORS, 
 FontAwesome
 
 <!-- AUTO-GENERATED-CONTENT:END -->
