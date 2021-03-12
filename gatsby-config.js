@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `A Tribute to a Legend`,
+    title: `A Tribute to a Legend - Sir Thomas Sean Connery`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `@gatsbyjs`,
   },
