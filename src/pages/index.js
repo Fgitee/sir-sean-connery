@@ -8,7 +8,6 @@ import SEO from "../components/seo"
 const IndexPage = () => (
  <Layout>
     <SEO title="Home" />
-   <h3>Sir Thomas Sean Connery</h3>
     <h5>Scotland's Greatest National Treasure</h5>
     <StaticImage
       src="https://www.commeuncamion.com/wp-content/uploads/2014/09/sean-connery-kilt-.jpg"
