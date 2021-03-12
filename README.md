@@ -10,6 +10,8 @@
 
 Sir Sean Connery (born Thomas Connery; 25 August 1930 – 31 October 2020) was a Scottish actor. He was the first actor to portray fictional British secret agent James Bond on film, starring in seven Bond films between 1962 and 1983.
 
+https://sir-sean-connery.netlify.app/ 
+
 ## 🧐 What's inside?
 
 A quick look at the top-level files and directories you'll see in the project.
