@@ -3,7 +3,7 @@ import { RouteData, Link } from 'react-static'
 //
 
 export default () => (
-  
+  <div>
       <p>Connery's breakthrough came in the role of secret agent James Bond. He was reluctant to commit to a film series, but understood that if the films succeeded his career would greatly benefit.</p> 
       <p>He played the character in the first five Bond films: Dr. No (1962), From Russia with Love (1963), Goldfinger (1964), Thunderball (1965), and You Only Live Twice (1967) - then appeared again as Bond in Diamonds Are Forever (1971) and Never Say Never Again (1983).</p> 
       <p>All seven films were commercially successful. James Bond, as portrayed by Connery, was selected as the third-greatest hero in cinema history by the American Film Institute. Connery's selection for the role of James Bond owed a lot to Dana Broccoli, wife of producer "Cubby" Broccoli, who is reputed to have been instrumental in persuading her husband that Connery was the right man.</p> 
@@ -21,4 +21,5 @@ export default () => (
       style={{ marginBottom: `1.45rem` }}
     />
       <h6 class="text-center">For more information on <em>Sean Connery</em> visit his <a href="https://en.wikipedia.org/wiki/Sean_Connery" target="_blank">Wikipedia Page</a>.</h6>
+</div>
 )
