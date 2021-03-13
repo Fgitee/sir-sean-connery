@@ -3,6 +3,7 @@ import React from 'react'
 
 export default () => (
   <div>
+  <h3>Amazing Vintage Photos of Sean Connery When He Was Young</h>
     <StaticImage
       src="https://dynaimage.cdn.cnn.com/cnn/w_1600/https%3A%2F%2Fcdn.cnn.com%2Fcnnnext%2Fdam%2Fassets%2F171117212302-02-sean-connery-restricted.jpg"
       alt="Sean Connery"
