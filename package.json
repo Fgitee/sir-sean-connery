@@ -1,7 +1,7 @@
 {
-  "name": "Sean Connery's Tribute ",
+  "name": "A Tribute to Sean Connery",
   "private": true,
-  "description": "A tribute to a legent",
+  "description": "A tribute to a legend",
   "version": "0.1.0",
   "dependencies": {
     "gatsby": "^3.0.1",
