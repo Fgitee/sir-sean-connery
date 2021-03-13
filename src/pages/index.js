@@ -4,27 +4,53 @@ import { Link } from "gatsby"
 import { AppContainer } from 'react-hot-loader'
 import App from './App'
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+// Export your top level component as JSX (for static rendering)
+export default App
 
-const IndexPage = () => (
- <Layout>
-    <SEO title="Home" />
-    <h5>Scotland's Greatest National Treasure</h5>
-    <StaticImage
-      src="https://www.commeuncamion.com/wp-content/uploads/2014/09/sean-connery-kilt-.jpg"
-      alt="Sean Connery"
-      width={400}
-      height={500}
-      quality={100}
-      formats={["AUTO", "WEBP", "AVIF"]}
-      style={{ marginBottom: `1.45rem` }}
-    />
-    <h3>Early Life</h3>
-      <p>Sir Thomas Sean Connery (born 25 August 1930) is a retired Scottish actor and producer who has won an Academy Award, two BAFTA Awards and three Golden Globes Awards.</p>
-      <p>Connery was the first actor to portray the character James Bond in film, starring in seven Bond films between 1962 and 1983.</p>
-      <p>Connery has been polled as "The Greatest Living Scott" and "Scotland's Greatest Living National Treasure". In 1989, he was proclaimed "Sexiest Man Alive" by People magazine, and in 1999, at age 69, he was voted "Sexiest Man of the Century". Connery was knighted in the 2000 New Year Honours for services to Film Drama.</p>
-      <h3>Career</h3>
+// Render your app
+if (typeof document !== 'undefined') {
+  const renderMethod = module.hot ? ReactDOM.render : ReactDOM.hydrate
+  const render = Comp => {
+    renderMethod(
+      <AppContainer>
+        <Comp />
+      </AppContainer>,
+      document.getElementById('root')
+    )
+  }
+
+  // Render!
+  render(App)
+
+  // Hot Module Replacement
+  if (module.hot) {
+    module.hot.accept('./App', () => {
+      render(require('./App').default)
+    })
+  }
+}
+
+//import Layout from "../components/layout"
+//import SEO from "../components/seo"
+
+//const IndexPage = () => (
+// <Layout>
+    //<SEO title="Home" />
+    //<h5>Scotland's Greatest National Treasure</h5>
+   // <StaticImage
+      //src="https://www.commeuncamion.com/wp-content/uploads/2014/09/sean-connery-kilt-.jpg"
+     // alt="Sean Connery"
+      //width={400}
+     // height={500}
+     // quality={100}
+     // formats={["AUTO", "WEBP", "AVIF"]}
+     // style={{ marginBottom: `1.45rem` }}
+   // />
+   // <h3>Early Life</h3>
+    //  <p>Sir Thomas Sean Connery (born 25 August 1930) is a retired Scottish actor and producer who has won an Academy Award, two BAFTA Awards and three Golden Globes Awards.</p>
+    //  <p>Connery was the first actor to portray the character James Bond in film, starring in seven Bond films between 1962 and 1983.</p>
+    //  <p>Connery has been polled as "The Greatest Living Scott" and "Scotland's Greatest Living National Treasure". In 1989, he was proclaimed "Sexiest Man Alive" by People magazine, and in 1999, at age 69, he was voted "Sexiest Man of the Century". Connery was knighted in the 2000 New Year Honours for services to Film Drama.</p>
+      //<h3>Career</h3>
       //<p>Connery's breakthrough came in the role of secret agent James Bond. He was reluctant to commit to a film series, but understood that if the films succeeded his career would greatly benefit.</p> 
       //<p>He played the character in the first five Bond films: Dr. No (1962), From Russia with Love (1963), Goldfinger (1964), Thunderball (1965), and You Only Live Twice (1967) - then appeared again as Bond in Diamonds Are Forever (1971) and Never Say Never Again (1983).</p> 
       //<p>All seven films were commercially successful. James Bond, as portrayed by Connery, was selected as the third-greatest hero in cinema history by the American Film Institute. Connery's selection for the role of James Bond owed a lot to Dana Broccoli, wife of producer "Cubby" Broccoli, who is reputed to have been instrumental in persuading her husband that Connery was the right man.</p> 
@@ -34,6 +60,6 @@ const IndexPage = () => (
       //<p>This didn't prevent Connery from being cast in roles, although it became more noticeable in his later years. In 2005, From Russia with Love was adapted by Electronic Arts into a video game, titled From Russia with Love (2005), which featured all-new voice work by Connery as well as his likeness, and those of several of the film's supporting cast.</p>
       //<h6 class="text-center">For more information on <em>Sean Connery</em> visit his <a href="https://en.wikipedia.org/wiki/Sean_Connery" target="_blank">Wikipedia Page</a>.</h6>
   
- </Layout>
-)
-export default IndexPage
+// </Layout>
+//)
+//export default IndexPage
