@@ -1,4 +1,5 @@
 import * as React from "react"
+import ReactDOM from 'react-dom'
 import { Link } from "gatsby"
 //import { StaticImage } from "gatsby-plugin-image"
 import { AppContainer } from 'react-hot-loader'
